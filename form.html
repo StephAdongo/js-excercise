@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form bssics</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <label for="username">Whats your name?</label>
+        <input type="text" id="username">
+        <p><label for="user_email">Email address :</label></p>
+        <input type="email" id="user_email" placeholder="you@example.com">
+        <p><label for="user_password">Password</label></p>
+        <input type="password" id="user_password" name="password">
+        <p><label for="amount">Amount</label></p>
+        <input type="number" id="amount" name="amount">
+        <p><button class="greet-btn">Greet me</button></p>
+        <textarea rows="20" cols="60"></textarea>
+    </div>
+    <h1 class ="greeting"></h1>
+    <select name="Car">
+        <option value="BMW">BMW</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Audi">Audi</option>
+        <option value="Range Rover">Range Rover</option>
+        <option value="Ford">Ford</option>
+    </select>
+    <select name="fashion">
+        <optgroup label="Clothing">
+          <option value="t_shirt">T-Shirts</option>
+          <option value="sweater">Sweaters</option>
+          <option value="coats">Coats</option>
+        </optgroup>
+        <optgroup label="Foot Wear">
+          <option value="sneakers">Sneakers</option>
+          <option value="boots">Boots</option>
+          <option value="sandals">Sandals</option>
+        </optgroup>
+      </select>
+      <h2>Ticket type</h2>
+      <div>
+        <input type="radio" id="child" name="ticket_type" value="child">
+        <label for="child">Child</label>
+      </div>
+      <div>
+        <input type="radio" id="adult" name="ticket_type" value="adult">
+        <label for="adult">Adult</label>
+      </div>
+      <div>
+        <input type="radio" id="senior" name="ticket-type" value="senoir">
+        <label for="senior">Senior</label>
+      </div>
+      <button type="submit">Submit</button>
+      <fieldset>
+        <legend>Contact Details</legend>
+      
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+      
+        <label for="phone_number">Phone Number:</label>
+        <input type="tel" id="phone_number" name="phone_number">
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+      </fieldset>
+      
+      <fieldset>
+        <legend>Delivery Details</legend>
+      
+        <label for="street_address">Street Address:</label>
+        <input type="text" id="street_address" name="street_address">
+      
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city">
+      
+        <label for="zip_code">Zip Code:</label>
+        <input type="text" id="zip_code" name="zip_code">
+      </fieldset>
+      <form action="#" mwthod="get">
+        <div>
+            <textarea placeholder="what`s happening?" minlength="3"></textarea>
+        </div>
+        <button type="submit">Tweet</button>
+      </form> 
+    <script src = "form.js"></script>
+</html>
